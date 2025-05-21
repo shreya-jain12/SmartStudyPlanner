@@ -1,0 +1,185 @@
+Programming Basics,,3
+Mathematics I,,4
+Mathematics II,Mathematics I,4
+Physics I,,3
+Chemistry I,,3
+Data Structures,Programming Basics,5
+Algorithms,Data Structures,5
+Discrete Mathematics,Mathematics I,4
+Computer Architecture,Programming Basics;Mathematics II,4
+Operating Systems,Data Structures;Computer Architecture,5
+Database Management Systems,Data Structures,4
+Computer Networks,Operating Systems;Data Structures,5
+Software Engineering,Programming Basics,3
+Object Oriented Programming,Programming Basics,4
+Theory of Computation,Discrete Mathematics,4
+Compiler Design,Theory of Computation,5
+Machine Learning,Algorithms;Statistics,6
+Artificial Intelligence,Machine Learning,5
+Cybersecurity,Computer Networks,5
+Cryptography,Discrete Mathematics,4
+Cloud Computing,Operating Systems;Computer Networks,5
+Internet of Things,Embedded Systems,4
+Embedded Systems,Digital Logic Design,4
+Digital Logic Design,Mathematics II,4
+Statistics,Mathematics II,4
+Data Mining,Machine Learning,5
+Big Data,Data Mining,5
+Deep Learning,Machine Learning,6
+Natural Language Processing,Artificial Intelligence,5
+Robotics,Embedded Systems;Algorithms,5
+Quantum Computing,Mathematics II;Physics I,6
+Ethical Hacking,Cybersecurity,5
+Parallel Computing,Operating Systems;Algorithms,5
+Distributed Systems,Operating Systems;Computer Networks,5
+Game Development,Programming Basics;Graphics,5
+3D Modelling,Graphics,4
+Graphics,,4
+Software Testing,Software Engineering,3
+Mobile App Development,Object Oriented Programming,5
+Web Development,Programming Basics,4
+Data Visualization,Statistics,4
+Numerical Methods,Mathematics II,4
+Human Computer Interaction,Programming Basics,4
+Compiler Construction,Compiler Design,5
+Information Security,Cryptography,5
+Digital Signal Processing,Mathematics II,5
+Pattern Recognition,Machine Learning,5
+Artificial Neural Networks,Deep Learning,6
+Cloud Storage,Cloud Computing,4
+Network Security,Computer Networks,5
+Wireless Networks,Computer Networks,4
+Database Security,Database Management Systems,4
+Software Project Management,Software Engineering,3
+Information Retrieval,Data Structures,4
+Operating System Concepts,Operating Systems,5
+Parallel Algorithms,Parallel Computing,5
+Advanced Algorithms,Algorithms,6
+Microprocessors,Digital Logic Design,4
+Computer Graphics,Graphics,5
+Compiler Optimization,Compiler Design,5
+Virtual Reality,Graphics,5
+Augmented Reality,Graphics,5
+Big Data Analytics,Big Data,6
+Software Architecture,Software Engineering,4
+Computer Vision,Machine Learning,6
+Cloud Infrastructure,Cloud Computing,5
+Data Warehouse,Database Management Systems,4
+Grid Computing,Distributed Systems,5
+Embedded Linux,Embedded Systems,5
+Mobile Computing,Computer Networks,4
+Signal Processing,Digital Signal Processing,5
+Text Mining,Data Mining,5
+Bioinformatics,Algorithms;Data Mining,6
+Advanced Databases,Database Management Systems,5
+Compiler Design Techniques,Compiler Design,6
+Cloud Security,Cloud Computing,5
+Computer Animation,Graphics,5
+Cyber Physical Systems,Embedded Systems,6
+Data Compression,Algorithms,5
+Data Governance,Big Data,4
+Data Integration,Database Management Systems,4
+Data Science,Statistics;Programming Basics,6
+Data Structures and Algorithms,Programming Basics,6
+Data Visualization Tools,Data Visualization,5
+Database Design,Database Management Systems,5
+Distributed Databases,Distributed Systems,6
+Distributed File Systems,Distributed Systems,5
+Embedded Software,Embedded Systems,5
+Ethical Hacking Techniques,Cybersecurity,5
+Evolutionary Algorithms,Algorithms,6
+Fault Tolerant Systems,Operating Systems,5
+Finite Automata,Theory of Computation,4
+Formal Languages,Theory of Computation,4
+Foundations of Computing,Mathematics I,4
+Game Design,Game Development,5
+Graph Theory,Discrete Mathematics,5
+Hardware Description Languages,Digital Logic Design,4
+High Performance Computing,Parallel Computing,6
+Human Computer Interaction Design,Human Computer Interaction,5
+Image Processing Techniques,Image Processing,6
+Information Theory,Mathematics II,5
+Information Visualization,Data Visualization,5
+Internet Protocols,Computer Networks,4
+Internet Technologies,Computer Networks,5
+Knowledge Representation,Artificial Intelligence,5
+Machine Translation,Natural Language Processing,6
+Mobile Operating Systems,Operating Systems,5
+Multimedia Systems,Computer Networks,5
+Natural Language Generation,Natural Language Processing,5
+Network Algorithms,Computer Networks,5
+Network Management,Computer Networks,4
+Network Programming,Computer Networks,5
+Neural Networks,Artificial Neural Networks,6
+Numerical Linear Algebra,Numerical Methods,5
+Object Oriented Design,Object Oriented Programming,5
+Operating System Internals,Operating Systems,6
+Optimization Techniques,Mathematics II,5
+Parallel Programming,Parallel Computing,6
+Pattern Analysis,Pattern Recognition,5
+Peer to Peer Networks,Computer Networks,5
+Performance Evaluation,Operating Systems,5
+Probabilistic Models,Statistics,5
+Programming Languages,Programming Basics,4
+Project Management,Software Engineering,3
+Python Programming,Programming Basics,4
+Quantum Algorithms,Quantum Computing,6
+Quantum Information Theory,Quantum Computing,6
+Real Time Systems,Operating Systems,5
+Recommender Systems,Machine Learning,6
+Robotics Control,Robotics,6
+Routing Protocols,Computer Networks,5
+Security Protocols,Cybersecurity,5
+Semantic Web,Artificial Intelligence,5
+Sensor Networks,Embedded Systems,5
+Signal Processing Algorithms,Digital Signal Processing,6
+Social Network Analysis,Data Mining,5
+Software Design Patterns,Software Engineering,4
+Software Maintenance,Software Engineering,3
+Software Metrics,Software Engineering,3
+Speech Recognition,Natural Language Processing,6
+Static Code Analysis,Software Engineering,4
+System Programming,Operating Systems,5
+Systems Modeling,Software Engineering,4
+Text Analytics,Data Mining,5
+Theoretical Computer Science,Theory of Computation,6
+Ubiquitous Computing,Computer Networks,5
+User Interface Design,Human Computer Interaction,4
+Virtual Machines,Operating Systems,5
+Wireless Sensor Networks,Computer Networks,5
+Wireless Technologies,Computer Networks,5
+XML Technologies,Programming Basics,4
+Advanced Computer Networks,Computer Networks,6
+Advanced Machine Learning,Machine Learning,7
+Advanced Robotics,Robotics,7
+Algorithm Design,Algorithms,6
+Applied Cryptography,Cryptography,6
+Artificial Intelligence Techniques,Artificial Intelligence,7
+Big Data Systems,Big Data,6
+Blockchain Technology,Cryptography,6
+Cloud Application Development,Cloud Computing,6
+Compiler Theory,Compiler Design,7
+Computer Hardware Design,Computer Architecture,6
+Computer System Security,Cybersecurity,6
+Concurrent Programming,Parallel Computing,6
+Computer Vision Applications,Computer Vision,7
+Data Engineering,Data Science,6
+Data Science Tools,Data Science,6
+Database Systems,Database Management Systems,6
+Deep Neural Networks,Deep Learning,7
+Distributed Computing Systems,Distributed Systems,6
+Embedded System Design,Embedded Systems,6
+Functional Programming,Programming Languages,5
+Graph Algorithms,Graph Theory,6
+Hardware-Software Co-design,Embedded Systems,6
+High-Speed Networks,Computer Networks,6
+Image Analysis,Image Processing,6
+Information Assurance,Cybersecurity,6
+Information Retrieval Systems,Information Retrieval,6
+Internet of Things Security,Internet of Things,6
+Knowledge Discovery,Data Mining,6
+Machine Learning Algorithms,Machine Learning,7
+Mobile Network Technologies,Mobile Computing,6shreya,shreya2,4
+safg,data structures,87
+123,big data,76
+65,big data,87

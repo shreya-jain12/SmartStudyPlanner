@@ -1,0 +1,54 @@
+---
+algorithms
+Study Plan (start from bottom prerequisites):
+- Algorithms (Estimated time: 5 hours)
+- Data structures (Estimated time: 5 hours)
+- Programming basics (Estimated time: 3 hours)
+
+Total Estimated Time: 13 hours
+
+Further Suggested Topics (that depend on 'algorithms'):
+- Advanced algorithms
+- Algorithm design
+- Bioinformatics
+- Data compression
+- Evolutionary algorithms
+- Machine learning
+- Parallel computing
+- Robotics
+---
+algorithms
+Study Plan (start from bottom prerequisites):
+- Algorithms (Estimated time: 5 hours)
+- Data structures (Estimated time: 5 hours)
+- Programming basics (Estimated time: 3 hours)
+
+Total Estimated Time: 13 hours
+
+Further Suggested Topics (that depend on 'algorithms'):
+- Advanced algorithms
+- Algorithm design
+- Bioinformatics
+- Data compression
+- Evolutionary algorithms
+- Machine learning
+- Parallel computing
+- Robotics
+---
+algorithms
+Study Plan (start from bottom prerequisites):
+- Algorithms (Estimated time: 5 hours)
+- Data structures (Estimated time: 5 hours)
+- Programming basics (Estimated time: 3 hours)
+
+Total Estimated Time: 13 hours
+
+Further Suggested Topics (that depend on 'algorithms'):
+- Advanced algorithms
+- Algorithm design
+- Bioinformatics
+- Data compression
+- Evolutionary algorithms
+- Machine learning
+- Parallel computing
+- Robotics

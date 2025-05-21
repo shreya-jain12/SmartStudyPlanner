@@ -1,0 +1,24 @@
+// Study Plan Flow
+digraph {
+	0 [label=Algorithms]
+	1 [label="Data structures"]
+	0 -> 1
+	2 [label="Programming basics"]
+	1 -> 2
+	3 [label="Advanced algorithms"]
+	2 -> 3
+	4 [label="Algorithm design"]
+	3 -> 4
+	5 [label=Bioinformatics]
+	4 -> 5
+	6 [label="Data compression"]
+	5 -> 6
+	7 [label="Evolutionary algorithms"]
+	6 -> 7
+	8 [label="Machine learning"]
+	7 -> 8
+	9 [label="Parallel computing"]
+	8 -> 9
+	10 [label=Robotics]
+	9 -> 10
+}
