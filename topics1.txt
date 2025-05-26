@@ -1,185 +1,595 @@
+What is an Algorithm,Programming Basics,2
+Rate of growth,Mathematics I,2
+Asymptotic Notations,Rate of growth,3
+Master theorem,Asymptotic Notations;Mathematics I,3
+Linear search,Programming Basics,2
+Binary search,Programming Basics;Algorithms,3
+Tower of Hanoi,Recursion;Algorithms,3
+Fibonacci sequence recursion,Recursion;Algorithms,3
+Sorting Algorithms Introduction,Algorithms,2
+Bubble sort,Sorting Algorithms Introduction;Programming Basics,2
+Insertion sort,Sorting Algorithms Introduction;Programming Basics,2
+Selection sort,Sorting Algorithms Introduction;Programming Basics,2
+Quick sort,Sorting Algorithms Introduction;Algorithms,3
+Randomized quick sort,Quick sort;Algorithms,3
+Merge sort,Sorting Algorithms Introduction;Algorithms,3
+Heap sort,Sorting Algorithms Introduction;Data Structures;Algorithms,4
+Counting sort,Sorting Algorithms Introduction;Algorithms,3
+External sorting,Sorting Algorithms Introduction;Operating Systems,4
+Comparison of sorting algorithms,Sorting Algorithms Introduction;Algorithms,3
+Representation of Graphs,Data Structures,3
+Breadth-first search (BFS),Graph Algorithms;Representation of Graphs,3
+Depth-first search (DFS),Graph Algorithms;Representation of Graphs,3
+Topological sort,Graph Algorithms;DFS,3
+Data structures for disjoint sets,Data Structures;Algorithms,3
+Finding cycle in a graph,Graph Algorithms;DFS;BFS,4
+Finding strongly connected components,Graph Algorithms;DFS,4
+Minimum spanning trees,Graph Algorithms;Greedy Algorithms,4
+Kruskal algorithm,Minimum spanning trees;Greedy Algorithms,3
+Prim algorithm,Minimum spanning trees;Greedy Algorithms,3
+Single source shortest paths,Graph Algorithms,4
+Dijkstra algorithm,Single source shortest paths;Greedy Algorithms,3
+Bellman ford algorithm,Single source shortest paths;Dynamic Programming,4
+All pair shortest paths,Graph Algorithms,4
+Floyd Warshall algorithm,All pair shortest paths;Dynamic Programming,4
+Greedy Algorithms Introduction,Algorithms,3
+Activity selection problem,Greedy Algorithms Introduction,3
+Job sequencing problem,Greedy Algorithms Introduction,3
+Huffman codes,Greedy Algorithms Introduction;Data Structures,4
+Fractional knapsack problem,Greedy Algorithms Introduction,3
+Dynamic Programming Introduction,Algorithms,3
+Overlapping substructure property,Dynamic Programming Introduction,2
+Optimal substructure property,Dynamic Programming Introduction,2
+Tabulation vs Memoization,Dynamic Programming Introduction,3
+Fibonacci numbers DP,Dynamic Programming Introduction,2
+0/1 Knapsack problem,Dynamic Programming Introduction,4
+Longest common subsequence,Dynamic Programming Introduction,4
+Matrix chain multiplication,Dynamic Programming Introduction,4
+Hashing Data Structure,Data Structures,3
+Hash function,Hashing Data Structure,2
+Collision handling,Hashing Data Structure,3
+Chaining,Collision handling;Data Structures,2
+Open addressing,Collision handling;Data Structures,2
+String Matching Introduction,Algorithms;Programming Basics,3
+Naive string-matching algorithm,String Matching Introduction,2
+Rabin-Karp algorithm,String Matching Introduction,3
+Knuth-Morris-Pratt algorithm,String Matching Introduction,4
+NP-Completeness Introduction,Theory of Computation;Discrete Mathematics,4
+P vs NP problems,NP-Completeness Introduction,3
+NP Complete and NP hard problems,NP-Completeness Introduction,3
+Polynomial time verification,NP-Completeness Introduction,2
+Subset-sum problem,NP-Completeness Introduction;Dynamic Programming,4
+Traveling salesman problem,NP-Completeness Introduction;Graph Algorithms,4
 Programming Basics,,3
 Mathematics I,,4
 Mathematics II,Mathematics I,4
-Physics I,,3
-Chemistry I,,3
-Data Structures,Programming Basics,5
-Algorithms,Data Structures,5
 Discrete Mathematics,Mathematics I,4
-Computer Architecture,Programming Basics;Mathematics II,4
-Operating Systems,Data Structures;Computer Architecture,5
-Database Management Systems,Data Structures,4
-Computer Networks,Operating Systems;Data Structures,5
-Software Engineering,Programming Basics,3
-Object Oriented Programming,Programming Basics,4
+Foundations of Computing,Mathematics I,4
+Data Structures,Programming Basics,5
+Data Structures and Algorithms,Programming Basics,6
+Algorithms,Data Structures,5
+Algorithm Analysis (Advanced),Algorithms;Advanced Algorithms,6
+String Algorithms,algorithms,4
+Randomized Algorithms,algorithms;probability & statistics,4
+Computational Geometry,algorithms;mathematics ii,5
+Network Flow Algorithms,graph algorithms,4
+Amortized Analysis,data structures;algorithms,3
+Segment Trees and Fenwick Trees,advanced data structures,4
+AVL Trees and Red-Black Trees,advanced data structures,5
+Graph Traversal Applications,graph algorithms,4
+Advanced Sorting Algorithms,algorithms,3
+Time & space complexity,Divide and conquer;Dynamic programming;Backtracking & graph algorithms,3
+Divide and conquer,Dynamic programming;Backtracking & graph algorithms,3
+Greedy algorithms,Time & space complexity;Divide and conquer;Dynamic programming;Backtracking & graph algorithms,8
+Dynamic programming,Backtracking & graph algorithms,4
+Backtracking & graph algorithms,,5
 Theory of Computation,Discrete Mathematics,4
 Compiler Design,Theory of Computation,5
-Machine Learning,Algorithms;Statistics,6
-Artificial Intelligence,Machine Learning,5
-Cybersecurity,Computer Networks,5
-Cryptography,Discrete Mathematics,4
-Cloud Computing,Operating Systems;Computer Networks,5
-Internet of Things,Embedded Systems,4
-Embedded Systems,Digital Logic Design,4
-Digital Logic Design,Mathematics II,4
-Statistics,Mathematics II,4
-Data Mining,Machine Learning,5
-Big Data,Data Mining,5
-Deep Learning,Machine Learning,6
-Natural Language Processing,Artificial Intelligence,5
-Robotics,Embedded Systems;Algorithms,5
-Quantum Computing,Mathematics II;Physics I,6
-Ethical Hacking,Cybersecurity,5
-Parallel Computing,Operating Systems;Algorithms,5
-Distributed Systems,Operating Systems;Computer Networks,5
-Game Development,Programming Basics;Graphics,5
-3D Modelling,Graphics,4
-Graphics,,4
-Software Testing,Software Engineering,3
-Mobile App Development,Object Oriented Programming,5
-Web Development,Programming Basics,4
-Data Visualization,Statistics,4
-Numerical Methods,Mathematics II,4
-Human Computer Interaction,Programming Basics,4
 Compiler Construction,Compiler Design,5
-Information Security,Cryptography,5
-Digital Signal Processing,Mathematics II,5
-Pattern Recognition,Machine Learning,5
-Artificial Neural Networks,Deep Learning,6
-Cloud Storage,Cloud Computing,4
-Network Security,Computer Networks,5
-Wireless Networks,Computer Networks,4
-Database Security,Database Management Systems,4
-Software Project Management,Software Engineering,3
-Information Retrieval,Data Structures,4
-Operating System Concepts,Operating Systems,5
-Parallel Algorithms,Parallel Computing,5
-Advanced Algorithms,Algorithms,6
-Microprocessors,Digital Logic Design,4
-Computer Graphics,Graphics,5
 Compiler Optimization,Compiler Design,5
-Virtual Reality,Graphics,5
-Augmented Reality,Graphics,5
-Big Data Analytics,Big Data,6
-Software Architecture,Software Engineering,4
-Computer Vision,Machine Learning,6
-Cloud Infrastructure,Cloud Computing,5
-Data Warehouse,Database Management Systems,4
-Grid Computing,Distributed Systems,5
-Embedded Linux,Embedded Systems,5
-Mobile Computing,Computer Networks,4
-Signal Processing,Digital Signal Processing,5
-Text Mining,Data Mining,5
-Bioinformatics,Algorithms;Data Mining,6
-Advanced Databases,Database Management Systems,5
 Compiler Design Techniques,Compiler Design,6
-Cloud Security,Cloud Computing,5
-Computer Animation,Graphics,5
-Cyber Physical Systems,Embedded Systems,6
-Data Compression,Algorithms,5
-Data Governance,Big Data,4
-Data Integration,Database Management Systems,4
-Data Science,Statistics;Programming Basics,6
-Data Structures and Algorithms,Programming Basics,6
-Data Visualization Tools,Data Visualization,5
-Database Design,Database Management Systems,5
-Distributed Databases,Distributed Systems,6
-Distributed File Systems,Distributed Systems,5
-Embedded Software,Embedded Systems,5
-Ethical Hacking Techniques,Cybersecurity,5
-Evolutionary Algorithms,Algorithms,6
-Fault Tolerant Systems,Operating Systems,5
-Finite Automata,Theory of Computation,4
+Compiler Optimization Techniques,Compiler Optimization;Compiler Design,6
 Formal Languages,Theory of Computation,4
-Foundations of Computing,Mathematics I,4
-Game Design,Game Development,5
-Graph Theory,Discrete Mathematics,5
+Finite Automata,Theory of Computation,4
+Introduction to automata theory,Finite Automata(DFA&NFA);Regular expressions & languages;Context-free grammars & languages;Pushdown Automata & turning machines,3
+Finite Automata(DFA&NFA),Regular expressions & languages;Context-free grammars & languages;Pushdown Automata & turning machines,2
+Regular expressions & languages,Context-free grammars & languages;Pushdown Automata & turning machines,3
+Context-free grammars & languages,Pushdown Automata & turning machines,4
+Pushdown Automata & turning machines,,4
+Theoretical Computer Science,Theory of Computation,6
+Operating Systems,Data Structures;Computer Architecture,5
+Operating System Concepts,Operating Systems,5
+Operating System Internals,Operating Systems,6
+Memory Management Algorithms,Operating Systems;Data Structures,5
+Fault Tolerant Systems,Operating Systems,5
+Real Time Systems,Operating Systems,5
+Mobile Operating Systems,Operating Systems,5
+System Programming,Operating Systems,5
+Virtual Machines,Operating Systems,5
+Embedded Linux,Embedded Systems,5
+Introduction to operating systems,Process management;Memory management;File systems;Deadlocks & synchronization,2
+Process management,Memory management;File systems;Deadlocks & synchronization,4
+Memory management,File systems;Deadlocks & synchronization,4
+File systems,Deadlocks & synchronization,3
+Deadlocks & synchronization,,4
+Computer Architecture,Programming Basics;Mathematics II,4
+Computer Hardware Design,Computer Architecture,6
+Digital Logic Design,Mathematics II,4
+Microprocessors,Digital Logic Design,4
+Microcontroller Programming,Microprocessors;Embedded Systems,4
+8085 architecture & programming,Introduction to microprocessors;8086 architecture & assembly language;Microcontroller 8051;Interfacing & applications,4
+8086 architecture & assembly language,Introduction to microprocessors;Microcontroller 8051;Interfacing & applications,5
+Microcontroller 8051,Introduction to microprocessors;Interfacing & applications,4
+Interfacing & applications,Introduction to microprocessors,5
 Hardware Description Languages,Digital Logic Design,4
-High Performance Computing,Parallel Computing,6
-Human Computer Interaction Design,Human Computer Interaction,5
-Image Processing Techniques,Image Processing,6
-Information Theory,Mathematics II,5
-Information Visualization,Data Visualization,5
+FPGA Design,Digital Logic Design;Computer Architecture,5
+Basic of computer organization,Instruction set architecture;CPU Design & pipelining;Memory hierarchy;Input/output systems,3
+Instruction set architecture,CPU Design & pipelining;Memory hierarchy;Input/output systems,4
+CPU Design & pipelining,Memory hierarchy;Input/output systems,5
+Memory hierarchy,Input/output systems,5
+Input/output systems,,5
+Embedded Systems,Digital Logic Design,4
+Embedded System Design,Embedded Systems,6
+Embedded Software,Embedded Systems,5
+Embedded System Prototyping,Analog and Digital Circuit Design;Simulation Tools;PCB Fabrication;System Integration Testing,2
+PCB Fabrication,Analog and Digital Circuit Design;Simulation Tools;System Integration Testing,2
+System Integration Testing,Analog and Digital Circuit Design;Simulation Tools,2
+Hardware-Software Co-design,Embedded Systems,6
+CMOS Inverter and Logic Gates,MOSFET Basics;VLSI Design Flow;Layout Design Rules;Timing and Power Analysis,2
+VLSI Design Flow,MOSFET Basics;Layout Design Rules;Timing and Power Analysis,2
+Layout Design Rules,MOSFET Basics;Timing and Power Analysis,2
+CMOS Fabrication Process,MOSFET Operation and Characteristics;CMOS Inverter Design;Combinational and Sequential CMOS Logic Circuits;Low-Power CMOS Design Techniques,2
+Combinational Circuits,Number Systems and Logic Gates;Sequential Circuits;Memory and Storage Devices;Digital Circuit Design Tools,2
+Sequential Circuits,Number Systems and Logic Gates;Memory and Storage Devices;Digital Circuit Design Tools,2
+Number system & codes,Boolean algebra & logic gates;Sequential circuits;Memory & programmable logic devices,2
+Boolean algebra & logic gates,Sequential circuits;Memory & programmable logic devices,3
+Combinational circuits,Number system & codes;Boolean algebra & logic gates;Sequential circuits;Memory & programmable logic devices,3
+Computer Networks,Operating Systems;Data Structures,5
 Internet Protocols,Computer Networks,4
 Internet Technologies,Computer Networks,5
-Knowledge Representation,Artificial Intelligence,5
-Machine Translation,Natural Language Processing,6
-Mobile Operating Systems,Operating Systems,5
-Multimedia Systems,Computer Networks,5
-Natural Language Generation,Natural Language Processing,5
+Advanced Computer Networks,Computer Networks,6
+High-Speed Networks,Computer Networks,6
+Network Models(OSI &TCP/IP),Data link layer & MAC protocols;Network layer & routing Algorithms;Transport layer protocols;Application layer & network security,3
+Data link layer & MAC protocols,Network layer & routing Algorithms;Transport layer protocols;Application layer & network security,3
+Network layer & routing Algorithms,Transport layer protocols;Application layer & network security,4
+Transport layer protocols,Application layer & network security,3
+Application layer & network security,,4
+Advanced Networking Protocols,Computer Networks;Internet Protocols,5
+Network Function Virtualization (NFV),Computer Networks;Cloud Computing,5
+Software Defined Networking (SDN),Computer Networks;Cloud Computing,5
+Content Delivery Networks (CDN),Computer Networks;Distributed Systems,4
 Network Algorithms,Computer Networks,5
 Network Management,Computer Networks,4
 Network Programming,Computer Networks,5
-Neural Networks,Artificial Neural Networks,6
-Numerical Linear Algebra,Numerical Methods,5
-Object Oriented Design,Object Oriented Programming,5
-Operating System Internals,Operating Systems,6
-Optimization Techniques,Mathematics II,5
-Parallel Programming,Parallel Computing,6
-Pattern Analysis,Pattern Recognition,5
 Peer to Peer Networks,Computer Networks,5
-Performance Evaluation,Operating Systems,5
-Probabilistic Models,Statistics,5
-Programming Languages,Programming Basics,4
-Project Management,Software Engineering,3
-Python Programming,Programming Basics,4
-Quantum Algorithms,Quantum Computing,6
-Quantum Information Theory,Quantum Computing,6
-Real Time Systems,Operating Systems,5
-Recommender Systems,Machine Learning,6
-Robotics Control,Robotics,6
 Routing Protocols,Computer Networks,5
-Security Protocols,Cybersecurity,5
-Semantic Web,Artificial Intelligence,5
-Sensor Networks,Embedded Systems,5
-Signal Processing Algorithms,Digital Signal Processing,6
-Social Network Analysis,Data Mining,5
+Wireless Networks,Computer Networks,4
+Wireless Sensor Networks,Computer Networks,5
+Wireless Technologies,Computer Networks,5
+Ubiquitous Computing,Computer Networks,5
+Mobile Computing,Computer Networks,4
+Circuit and Packet Switching Principles,Evolution of Switching Techniques;Stored Program Control (SPC) Systems;Switching Network Architectures;Call Processing and Signaling Protocols,2
+Call Processing and Signaling Protocols,Evolution of Switching Techniques;Stored Program Control (SPC) Systems;Switching Network Architectures,2
+Database Management Systems,Data Structures,4
+Database Systems,Database Management Systems,6
+Advanced Databases,Database Management Systems,5
+Advanced Database Systems,Database Management Systems;Distributed Systems,6
+Database Design,Database Management Systems,5
+Database Security,Database Management Systems,4
+Data Warehouse,Database Management Systems,4
+Graph Database Systems,Database Management Systems;Graph Theory,5
+Temporal Databases,Database Management Systems,4
+Federated Databases,Distributed Databases;Database Management Systems,5
+Introduction to database,Relational model & SQL;Normalization & ER modeling;Transaction management;Indexing & query optimization,2
+Relational model & SQL,Normalization & ER modeling;Transaction management;Indexing & query optimization,4
+Normalization & ER modeling,Transaction management;Indexing & query optimization,3
+Transaction management,Indexing & query optimization,3
+Indexing & query optimization,,3
+Parallel Computing,Operating Systems;Algorithms,5
+Parallel Algorithms,Parallel Computing,5
+Parallel Programming,Parallel Computing,6
+High Performance Computing,Parallel Computing,6
+Distributed Systems,Operating Systems;Computer Networks,5
+Distributed Computing Systems,Distributed Systems,6
+Distributed Databases,Distributed Systems,6
+Distributed File Systems,Distributed Systems,5
+Grid Computing,Distributed Systems,5
+Microservices Architecture,Software Architecture;Distributed Systems,5
+Event-Driven Architecture,Software Architecture;Distributed Systems,5
+Message Queues,Distributed Systems;Computer Networks,4
+Chaos Engineering,Distributed Systems;Software Testing,5
+Graphics,,4
+3D Modelling,Graphics,4
+Computer Graphics,Graphics,5
+Virtual Reality,Graphics,5
+Augmented Reality,Graphics,5
+Computer Animation,Graphics,5
+Basics of computer graphics,2D &3D transformations;Viewing & clipping;Curves & surfaces;Rendering techniques,3
+2D &3D transformations,Viewing & clipping;Curves & surfaces;Rendering techniques,4
+Viewing & clipping,Curves & surfaces;Rendering techniques,4
+Curves & surfaces,Rendering techniques,4
+Rendering techniques,,5
+Augmented Reality Development,Augmented Reality;Game Development,5
+Virtual Reality Development,Virtual Reality;Game Development,5
+Game Engine Architecture,Game Development;Object Oriented Programming,5
+Procedural Content Generation,Game Development;Algorithms,4
+Game Physics,Game Development;Physics I,5
+Game Design,Game Development,5
+Mobile Game Development,Mobile App Development;Game Development,5
+Software Engineering,Programming Basics,3
+Software Testing,Software Engineering,3
+Software Project Management,Software Engineering,3
+Software Architecture,Software Engineering,4
 Software Design Patterns,Software Engineering,4
 Software Maintenance,Software Engineering,3
 Software Metrics,Software Engineering,3
-Speech Recognition,Natural Language Processing,6
 Static Code Analysis,Software Engineering,4
-System Programming,Operating Systems,5
 Systems Modeling,Software Engineering,4
-Text Analytics,Data Mining,5
-Theoretical Computer Science,Theory of Computation,6
-Ubiquitous Computing,Computer Networks,5
-User Interface Design,Human Computer Interaction,4
-Virtual Machines,Operating Systems,5
-Wireless Sensor Networks,Computer Networks,5
-Wireless Technologies,Computer Networks,5
+DevOps Principles and Practices,Software Engineering;Cloud Computing,5
+Secure Software Development,Software Engineering;Cybersecurity,4
+Site Reliability Engineering (SRE),DevOps Principles and Practices;Operating Systems,6
+Software development life cycle(SDLC),Requirements engineering );Design models & UML);Testing & maintenance;Project management & agile methodologies,3
+Requirements engineering ),Design models & UML);Testing & maintenance;Project management & agile methodologies,4
+Design models & UML),Testing & maintenance;Project management & agile methodologies,4
+Testing & maintenance,Project management & agile methodologies,4
+Project management & agile methodologies,,5
+Object Oriented Programming,Programming Basics,4
+Object Oriented Design,Object Oriented Programming,5
+Object-oriented programming(OOP),Exception handling & file I/O;Collections framework;Multithreading & concurrency;Java gui & event handling,4
+Exception handling & file I/O,Collections framework;Multithreading & concurrency;Java gui & event handling,3
+Collections framework,Multithreading & concurrency;Java gui & event handling,3
+Multithreading & concurrency,Java gui & event handling,3
+Java gui & event handling,,3
+Classes & objects,Constructors & destructors;Inheritance & polymorphism;Templates & STL;Exception handling & file I/O,3
+Constructors & destructors,Inheritance & polymorphism;Templates & STL;Exception handling & file I/O,2
+Inheritance & polymorphism,Templates & STL;Exception handling & file I/O,4
+Templates & STL,Exception handling & file I/O,4
+Functional Programming,Programming Languages,5
+Programming Languages,Programming Basics,4
+Python Programming,Programming Basics,4
 XML Technologies,Programming Basics,4
-Advanced Computer Networks,Computer Networks,6
-Advanced Machine Learning,Machine Learning,7
-Advanced Robotics,Robotics,7
-Algorithm Design,Algorithms,6
+WebAssembly,Web Development;Programming Basics,4
+Full-Stack Web Development Frameworks,Web Development;Programming Basics,6
+Web Development,Programming Basics,4
+Mobile App Development,Object Oriented Programming,5
+Progressive Web Apps (PWA),Web Development;Mobile App Development,4
+Introduction to Mobile Platforms,UI/UX Design Principles;Application Components;Data Storage and Management;Deployment and Maintenance,4
+UI/UX Design Principles,Application Components;Data Storage and Management;Deployment and Maintenance,4
+Application Components,Data Storage and Management;Deployment and Maintenance,4
+Data Storage and Management,Deployment and Maintenance,5
+Deployment and Maintenance,,5
+Mobile Communication Systems,Mobile Operating Systems;Mobile Application Development;Context-Aware Computing;Mobile Security,4
+Mobile Application Development,Mobile Operating Systems;Context-Aware Computing;Mobile Security,4
+Context-Aware Computing,Mobile Operating Systems;Mobile Security,5
+Mobile Security,Mobile Operating Systems,4
+Cybersecurity,Computer Networks,5
+Cryptography,Discrete Mathematics,4
+Information Security,Cryptography,5
+Network Security,Computer Networks,5
+Database Security,Database Management Systems,4
+Operating System Security,Operating Systems;Cybersecurity,5
+Ethical Hacking,Cybersecurity,5
+Ethical Hacking Techniques,Cybersecurity,5
 Applied Cryptography,Cryptography,6
-Artificial Intelligence Techniques,Artificial Intelligence,7
-Big Data Systems,Big Data,6
-Blockchain Technology,Cryptography,6
-Cloud Application Development,Cloud Computing,6
-Compiler Theory,Compiler Design,7
-Computer Hardware Design,Computer Architecture,6
+Security Protocols,Cybersecurity,5
 Computer System Security,Cybersecurity,6
-Concurrent Programming,Parallel Computing,6
+Internet of Things Security,Internet of Things,6
+Cloud Security,Cloud Computing,5
+Cloud Security Posture Management (CSPM),Cloud Security;Cloud Computing,5
+Container Security,Containerization Technologies (Docker,Kubernetes);Cybersecurity,5
+Serverless Security,Serverless Computing;Cybersecurity,4
+Cyber-Physical Systems Security,Cyber Physical Systems;Cybersecurity,6
+Automotive Cyber Security,Cybersecurity;Embedded Systems,5
+Threat Intelligence,Cybersecurity;Computer Networks,5
+Digital Forensics,Cybersecurity;Operating Systems,5
+Penetration Testing (Advanced),Ethical Hacking;Network Security,6
+Secure Coding Practices,Software Engineering;Cybersecurity,4
+Server Hardening,Operating System Security;Cybersecurity,4
+Malware Analysis,Cybersecurity;Operating Systems,5
+Reverse Engineering,Computer Architecture;Cybersecurity,5
+Homomorphic Encryption,Cryptography;Mathematics II,6
+Zero-Knowledge Proofs,Cryptography;Discrete Mathematics,6
+Introduction to Cryptography,Symmetric Key Cryptography;Asymmetric Key Cryptography;Hash Functions and Message Authentication;Cryptographic Protocols,4
+Symmetric Key Cryptography,Asymmetric Key Cryptography;Hash Functions and Message Authentication;Cryptographic Protocols,4
+Asymmetric Key Cryptography,Hash Functions and Message Authentication;Cryptographic Protocols,4
+Hash Functions and Message Authentication,Cryptographic Protocols,5
+Cryptographic Protocols,,4
+Fundamentals of Cybersecurity,Application Security;Ethical Hacking and Penetration Testing;Legal and Ethical Aspects,4
+Network Security,Fundamentals of Cybersecurity;Application Security;Ethical Hacking and Penetration Testing;Legal and Ethical Aspects,4
+Application Security,Ethical Hacking and Penetration Testing;Legal and Ethical Aspects,4
+Ethical Hacking and Penetration Testing,Legal and Ethical Aspects,5
+Legal and Ethical Aspects,,5
+Machine Learning,Algorithms;Statistics,6
+Artificial Intelligence,Machine Learning,5
+Deep Learning,Machine Learning,6
+Artificial Neural Networks,Deep Learning,6
+Pattern Recognition,Machine Learning,5
+Natural Language Processing,Artificial Intelligence,5
+Computer Vision,Machine Learning,6
+Reinforcement Learning,machine learning;probability & statistics,6
+Generative Adversarial Networks,deep learning;artificial neural networks,5
+Ensemble Learning Methods,machine learning algorithms,4
+Dimensionality Reduction Techniques,machine learning;linear algebra,4
+MLOps,machine learning;software engineering,5
+Explainable AI,artificial intelligence;machine learning,4
+Time Series Analysis with ML,machine learning;statistics,5
+Bayesian Machine Learning,machine learning;probability & statistics,5
+Transfer Learning,deep learning,4
+Federated Learning,machine learning;distributed systems,5
+Causal Inference in ML,machine learning;statistics,5
+Self-Supervised Learning,deep learning,4
+Natural Language Understanding,Natural Language Processing;Deep Learning,6
+Computer Vision Architectures,Computer Vision;Deep Learning,6
+Evolutionary Computation,Algorithms;Artificial Intelligence,5
+Reinforcement Learning Applications,Reinforcement Learning;Machine Learning,6
+Explainable AI (XAI) Methods,Explainable AI;Machine Learning,5
+Generative Models (Advanced),Generative Adversarial Networks;Deep Learning,6
+Time Series Forecasting (Advanced),Time Series Analysis with ML;Deep Learning,5
+Knowledge Representation,Artificial Intelligence,5
+Semantic Web,Artificial Intelligence,5
+Machine Translation,Natural Language Processing,6
+Natural Language Generation,Natural Language Processing,5
+Neural Networks,Artificial Neural Networks,6
+Recommender Systems,Machine Learning,6
+Artificial Intelligence Techniques,Artificial Intelligence,7
 Computer Vision Applications,Computer Vision,7
+Deep Neural Networks,Deep Learning,7
+Machine Learning Algorithms,Machine Learning,7
+Introduction to AI,Seach algorithm;Machine learning basics;AI Applications,2
+Seach algorithm,Machine learning basics;AI Applications,4
+Knowledge representation,Introduction to AI;Seach algorithm;Machine learning basics;AI Applications,4
+Machine learning basics,AI Applications,5
+AI Applications,,5
+Knowledge Graphs,Artificial Intelligence;Data Mining,5
+Ethical AI,Artificial Intelligence;Explainable AI,4
+AI in Healthcare,Artificial Intelligence;Machine Learning,5
+Robotics Process Automation (RPA),Software Engineering;Artificial Intelligence,4
+Cloud Computing,Operating Systems;Computer Networks,5
+Cloud Storage,Cloud Computing,4
+Cloud Infrastructure,Cloud Computing,5
+Cloud Application Development,Cloud Computing,6
+Cloud Native Development,Cloud Computing;Software Engineering,5
+Containerization Technologies (Docker,Kubernetes),Cloud Computing;Operating Systems,5
+Serverless Computing,Cloud Computing;Web Development,4
+Introduction to Data Engineering,Data Storage Technologies;Data Processing frameworks;Data Pipeline Orchestration;Cloud Platforms & Services,4
+Data Storage Technologies,Data Processing frameworks;Data Pipeline Orchestration;Cloud Platforms & Services,4
+Data Processing frameworks,Data Pipeline Orchestration;Cloud Platforms & Services,4
+Data Pipeline Orchestration,Cloud Platforms & Services,5
+Cloud Platforms & Services,,4
+Statistics,Mathematics II,4
+Data Mining,Machine Learning,5
+Big Data,Data Mining,5
+Big Data Systems,Big Data,6
+Big Data Analytics,Big Data,6
+Data Visualization,Statistics,4
+Data Visualization Tools,Data Visualization,5
+Information Visualization,Data Visualization,5
+Text Mining,Data Mining,5
+Social Network Analysis,Data Mining,5
+Knowledge Discovery,Data Mining,6
 Data Engineering,Data Science,6
 Data Science Tools,Data Science,6
-Database Systems,Database Management Systems,6
-Deep Neural Networks,Deep Learning,7
-Distributed Computing Systems,Distributed Systems,6
-Embedded System Design,Embedded Systems,6
-Functional Programming,Programming Languages,5
-Graph Algorithms,Graph Theory,6
-Hardware-Software Co-design,Embedded Systems,6
-High-Speed Networks,Computer Networks,6
-Image Analysis,Image Processing,6
-Information Assurance,Cybersecurity,6
-Information Retrieval Systems,Information Retrieval,6
+Data Science,Statistics;Programming Basics,6
+Data Streaming Architectures,Big Data Systems;Distributed Systems,6
+Data Governance,Big Data,4
+Data Integration,Database Management Systems,4
+Feature Engineering for ML,Machine Learning;Data Science,5
+Applied Statistics for Data Science,Statistics;Data Science,5
+High Performance Data Analytics,Big Data Analytics;High Performance Computing,6
+Data Lake Architectures,Big Data Systems;Cloud Storage,5
+Data Mesh,Distributed Databases;Data Governance,5
+Streaming Analytics,Data Streaming Architectures;Big Data,5
+Data Product Management,Data Science;Software Project Management,4
+Fundamentals of Data Visualization,Visualization Tools & Libraries;Data Preparation & Cleaning;Interactive Dashboards;Storytelling with Data,3
+Visualization Tools & Libraries,Data Preparation & Cleaning;Interactive Dashboards;Storytelling with Data,4
+Data Preparation & Cleaning,Interactive Dashboards;Storytelling with Data,4
+Interactive Dashboards,Storytelling with Data,4
+Storytelling with Data,,4
+Internet of Things,Embedded Systems,4
 Internet of Things Security,Internet of Things,6
-Knowledge Discovery,Data Mining,6
-Machine Learning Algorithms,Machine Learning,7
-Mobile Network Technologies,Mobile Computing,6shreya,shreya2,4
-safg,data structures,87
-123,big data,76
-65,big data,87
+Edge Computing,Internet of Things;Cloud Computing,4
+Robotics,Embedded Systems;Algorithms,5
+Advanced Robotics,Robotics,7
+Robotics Control,Robotics,6
+Reinforcement Learning in Robotics,Reinforcement Learning;Robotics,6
+Humanoid Robotics,Robotics;Artificial Intelligence,6
+Swarm Robotics,Robotics;Algorithms,5
+Introduction to Robotics,Kinematics & Dynamics;Sensors & Actuators;Control Systems;Simulation & Programming,2
+Kinematics & Dynamics,Introduction to Robotics;Sensors & Actuators;Control Systems;Simulation & Programming,4
+Sensors & Actuators,Introduction to Robotics;Control Systems;Simulation & Programming,4
+Control Systems,Introduction to Robotics;Simulation & Programming,5
+Simulation & Programming,Introduction to Robotics,5
+Introduction to Robotics,Sensors and Actuators;Robot Kinematics and Dynamics;Control Systems in Robotics;Automation in Manufacturing,2
+Robot Kinematics and Dynamics,Sensors and Actuators;Control Systems in Robotics;Automation in Manufacturing,2
+Control Systems in Robotics,Sensors and Actuators;Automation in Manufacturing,2
+Automation in Manufacturing,Sensors and Actuators,2
+Quantum Computing,Mathematics II;Physics I,6
+Quantum Algorithms,Quantum Computing,6
+Quantum Information Theory,Quantum Computing,6
+Quantum Cryptography,Quantum Computing;Applied Cryptography,6
+Quantum Machine Learning,Quantum Computing;Machine Learning,6
+Quantum Sensing,Quantum Computing;Physics I,5
+Quantum Communication,Quantum Computing;Computer Networks,6
+Blockchain Technology,Cryptography,6
+Blockchain Development,Blockchain Technology;Programming Basics,5
+Blockchain basics & architecture,Cryptographic principles;Bitcoin & Ethereum;Smart contracts;Blockchain applications,4
+Cryptographic principles,Bitcoin & Ethereum;Smart contracts;Blockchain applications,4
+Bitcoin & Ethereum,Smart contracts;Blockchain applications,4
+Smart contracts,Blockchain applications,5
+Blockchain applications,,4
+Digital Signal Processing,Mathematics II,5
+Signal Processing,Digital Signal Processing,5
+Signal Processing Algorithms,Digital Signal Processing,6
+Time and Frequency Domain Analysis,Signal Classification;System Properties;Fourier and Laplace Transforms;Convolution and System Response,2
+System Properties,Signal Classification;Fourier and Laplace Transforms;Convolution and System Response,2
+Fourier and Laplace Transforms,Signal Classification;Convolution and System Response,3
+Convolution and System Response,Signal Classification;Time and Frequency Domain Analysis;System Properties;Fourier and Laplace Transforms,2
+FFT Algorithms,Discrete-Time Signals;Z-Transform and DFT;Digital Filters;DSP Applications;Discrete-Time Signals and Systems;Sampling Theorem and Aliasing;Z-Transform and Its Applications;Design of FIR and IIR Filters;Fast Fourier Transform (FFT) Algorithms,2
+Z-Transform and Its Applications,Discrete-Time Signals;Z-Transform and DFT;Digital Filters;DSP Applications;Discrete-Time Signals and Systems;Sampling Theorem and Aliasing;Design of FIR and IIR Filters;Fast Fourier Transform (FFT) Algorithms,2
+Design of FIR and IIR Filters,Discrete-Time Signals;Z-Transform and DFT;Digital Filters;DSP Applications;Discrete-Time Signals and Systems;Sampling Theorem and Aliasing;Fast Fourier Transform (FFT) Algorithms,3
+Convolution and System Response,Continuous and Discrete-Time Signals;Linear Time-Invariant (LTI) Systems;Fourier Series and Transform;Laplace and Z-Transforms,2
+Information Theory,Mathematics II,5
+Information Theory,Analog and Digital Modulation;Noise and Channel Capacity;Multiplexing Techniques;Communication System Components,2
+Noise and Channel Capacity,Analog and Digital Modulation;Multiplexing Techniques;Communication System Components,2
+Multiplexing Techniques,Analog and Digital Modulation;Communication System Components,3
+Human Computer Interaction,Programming Basics,4
+Human Computer Interaction Design,Human Computer Interaction,5
+User Interface Design,Human Computer Interaction,4
+Physics I,,3
+Chemistry I,,3
+Biocomputing,Biology;Computer Architecture,5
+Neuroinformatics,Biology;Artificial Intelligence,5
+Computational Chemistry,Chemistry I;Mathematics II,5
+Computational Physics,Physics I;Mathematics II,5
+Bioinformatics,Algorithms;Data Mining,6
+Biometrics,Image Processing;Pattern Recognition,4
+Medical Imaging,Image Processing;Computer Vision,5
+Geographic Information Systems (GIS),Data Visualization;Database Management Systems,4
+Linear programming,Transportation & assignment problems;Non-linear programming;Dynamic programming;Queuing theory,5
+Transportation & assignment problems,Non-linear programming;Dynamic programming;Queuing theory,4
+Non-linear programming,Dynamic programming;Queuing theory,4
+Queuing theory,Dynamic programming,5
+Calculus &differential equations,Linear algebra;Discrete mathematics;Numerical methods,6
+Linear algebra,Discrete mathematics;Numerical methods,5
+Probability & statistics,Calculus &differential equations;Linear algebra;Discrete mathematics;Numerical methods,5
+Numerical methods,Discrete mathematics,4
+Numerical Linear Algebra,Numerical Methods,5
+Optimization Techniques,Mathematics II,5
+Control System Basics,,3
+Time and Frequency Response,Control System Basics;Stability Analysis;PID Controllers;State-Space Analysis,2
+Stability Analysis,Control System Basics;PID Controllers;State-Space Analysis,2
+PID Controllers,Control System Basics;State-Space Analysis,2
+State-Space Analysis,Control System Basics,2
+Calculus of Variations,Pontryagin’s Principle;Dynamic Programming;State Feedback and Observers;Application in Robotics and Aerospace,2
+State Feedback and Observers,Pontryagin’s Principle;Dynamic Programming;Application in Robotics and Aerospace,2
+Application in Robotics and Aerospace,Pontryagin’s Principle;Dynamic Programming,2
+Fundamentals of Electric Circuits,AC & DC Circuit Analysis;Transformers;Electrical Machines;Electrical Measurements & Instruments,3
+AC & DC Circuit Analysis,Transformers and Electrical Machines;Semiconductors and Diodes;Transistors and Amplifiers,3
+Transformers,AC & DC Circuit Analysis;Electrical Machines;Electrical Measurements & Instruments,3
+Electrical Measurements & Instruments,AC & DC Circuit Analysis;Electrical Machines,2
+Semiconductors & Diodes,Transistors & Amplifiers;Operational Amplifiers (Op-Amps);Oscillators & Waveform Generators;Introduction to Communication Systems,2
+Transistors & Amplifiers,Operational Amplifiers (Op-Amps);Oscillators & Waveform Generators;Introduction to Communication Systems,2
+Operational Amplifiers (Op-Amps),Oscillators & Waveform Generators;Introduction to Communication Systems,2
+Oscillators & Waveform Generators,Introduction to Communication Systems,3
+Introduction to Communication Systems,,1
+BJT and FET Amplifiers,Frequency Response;Feedback and Oscillators;Power Amplifiers;Analog Integrated Circuits,2
+Power Amplifiers,Frequency Response;Feedback and Oscillators;Analog Integrated Circuits,2
+Analog Integrated Circuits,Frequency Response;Feedback and Oscillators,2
+Rectifiers and Converters,Power Semiconductor Devices;Inverters and Choppers;Pulse Width Modulation;Industrial Applications,2
+Transformers and Electrical Machines,AC and DC Circuit Analysis;Semiconductors and Diodes;Transistors and Amplifiers,4
+Transistors and Amplifiers,AC and DC Circuit Analysis;Semiconductors and Diodes,3
+Electrostatics and Magnetostatics,Boundary Value Problems;Maxwell’s Equations;Electromagnetic Wave Propagation;Transmission Lines,2
+Maxwell's Equations,Wave Propagation in Various Media;Quantum Theory Basics;Schrödinger Equation;Applications in Modern Electronics,2
+Electromagnetic Wave Propagation,Boundary Value Problems;Maxwell’s Equations;Transmission Lines,2
+Transmission Lines,Boundary Value Problems;Maxwell’s Equations,2
+Magnetic Fields and Inductance,Electric Fields and Potential;Capacitance and Dielectrics;Electromagnetic Induction;Maxwell’s Equations,2
+Electromagnetic Induction,Electric Fields and Potential;Capacitance and Dielectrics;Maxwell’s Equations,2
+Dipole and Monopole Antennas,Antenna Parameters and Radiation Patterns;Antenna Arrays and Beamforming;Radio Wave Propagation Mechanisms;Link Budget and Path Loss Models,2
+Antenna Arrays and Beamforming,Antenna Parameters and Radiation Patterns;Radio Wave Propagation Mechanisms;Link Budget and Path Loss Models,2
+Radio Wave Propagation Mechanisms,Antenna Parameters and Radiation Patterns;Link Budget and Path Loss Models,2
+Power Generation Methods,Power System Components;Transmission and Distribution;Power System Analysis;Smart Grid Concepts,2
+Power System Analysis,Power System Components;Transmission and Distribution;Smart Grid Concepts,3
+Electromechanical Energy Conversion,Transformers and Motors;Torque and Force Production;Dynamic Modeling of Machines;Electromechanical System Applications,2
+Transformers and Motors,Torque and Force Production;Dynamic Modeling of Machines;Electromechanical System Applications,3
+Torque and Force Production,Dynamic Modeling of Machines;Electromechanical System Applications,3
+Energy Bands and Semiconductors,Crystal Structures;Magnetic and Dielectric Materials;Superconductivity;Nanoelectronic Materials,2
+Blackbody Radiation,Photoelectric Effect;Wave-Particle Duality;Atomic Models,2
+Schrödinger Equation,Blackbody Radiation;Photoelectric Effect;Wave-Particle Duality;Atomic Models,2
+Atomic Models,Photoelectric Effect;Wave-Particle Duality,2
+Thermodynamic Laws,Heat Transfer Modes;Steam and Gas Cycles;Refrigeration and Air Conditioning;Thermal Applications in Power Systems,2
+Refrigeration and Air Conditioning,Heat Transfer Modes;Steam and Gas Cycles;Thermal Applications in Power Systems,2
+Thermal Applications in Power Systems,Heat Transfer Modes;Steam and Gas Cycles,2
+Refrigeration Cycles,Gas Power Cycles;Vapor Power Cycles;Combustion Analysis;Thermodynamic Devices,2
+Properties of Fluids,Fluid Statics;Fluid Kinematics;Fluid Dynamics;Flow Measurement and Devices,2
+Fluid Statics,Fluid Kinematics;Fluid Dynamics;Flow Measurement and Devices,2
+Fluid Dynamics,Fluid Kinematics;Flow Measurement and Devices,3
+Flow Measurement and Devices,Fluid Kinematics,2
+Open Channel Flow,Hydraulic Pumps and Turbines;Flow Through Pipes;Dimensional Analysis and Similitude;Hydraulic Systems and Controls,2
+Hydraulic Pumps and Turbines,Flow Through Pipes;Dimensional Analysis and Similitude;Hydraulic Systems and Controls,2
+Flow Through Pipes,Dimensional Analysis and Similitude;Hydraulic Systems and Controls,2
+Hydraulic Systems and Controls,Dimensional Analysis and Similitude,2
+Torsion of Shafts,Stress and Strain Analysis;Shear Force and Bending Moment;Columns and Struts;Deflection of Beams;Simple Stresses and Strains;Bending Moment and Shear Force;Deflection of Beams;Theories of Failure,2
+Columns and Struts,Stress and Strain Analysis;Shear Force and Bending Moment;Deflection of Beams;Simple Stresses and Strains;Bending Moment and Shear Force;Deflection of Beams;Theories of Failure,2
+Bending Moment and Shear Force,Stress and Strain Analysis;Shear Force and Bending Moment;Deflection of Beams;Simple Stresses and Strains;Deflection of Beams;Theories of Failure,2
+Design of Shafts and Bearings,Design Process and Material Selection;Stress Analysis and Factor of Safety;Joints and Couplings;Fatigue and Creep,2
+Joints and Couplings,Design Process and Material Selection;Stress Analysis and Factor of Safety;Fatigue and Creep,2
+Fatigue and Creep,Design Process and Material Selection;Stress Analysis and Factor of Safety,2
+Velocity and Acceleration Analysis,Mechanisms and Linkages;Cams and Gears;Balancing and Vibrations;Flywheels and Governors,2
+Cams and Gears,Mechanisms and Linkages;Balancing and Vibrations;Flywheels and Governors,2
+Flywheels and Governors,Mechanisms and Linkages;Balancing and Vibrations,2
+Vibration Isolation,Free and Forced Vibrations;Modal Analysis;Sound Measurement;Noise Reduction Techniques,2
+Modal Analysis,Free and Forced Vibrations;Sound Measurement;Noise Reduction Techniques,2
+Production Planning and Control,Work Study and Time Study;Linear Programming;Inventory Models;Queuing and Simulation,2
+Measurement Systems,Transducers and Sensors;Signal Conditioning;Temperature and Pressure Measurement;Data Acquisition,1
+Transducers and Sensors,Signal Conditioning;Temperature and Pressure Measurement;Data Acquisition,2
+Signal Conditioning,Measurement Systems;Transducers and Sensors;Temperature and Pressure Measurement;Data Acquisition,2
+Temperature and Pressure Measurement,Signal Conditioning;Data Acquisition,2
+Sensors and Transducers,Measurement Systems and Errors;Data Acquisition Systems;Electronic Display Instruments,2
+Signal Conditioning,Measurement Systems and Errors;Sensors and Transducers;Data Acquisition Systems;Electronic Display Instruments,2
+Electronic Display Instruments,Measurement Systems and Errors;Data Acquisition Systems,2
+Machining Processes,Metal Forming;CNC and Automation;Tool Design;Surface Finishing,2
+CNC and Automation,Metal Forming;Tool Design;Surface Finishing,2
+Tool Design,Metal Forming;Surface Finishing,2
+Plastic Processing,Advanced Machining;Powder Metallurgy;Rapid Prototyping;Micro-Manufacturing,2
+Rapid Prototyping,Advanced Machining;Powder Metallurgy;Micro-Manufacturing,2
+Materials for Additive Manufacturing,3D Printing Technologies;CAD for AM;Process Parameters and Control;Applications and Future Trends,2
+Process Parameters and Control,3D Printing Technologies;CAD for AM;Applications and Future Trends,2
+Lab Demonstrations and Practice,Casting;Welding;Machining;Forging,1
+Entrepreneurial Mindset and Innovation,Business Plan Development;Financial Planning and Funding;Market Analysis and Strategy;Legal and Ethical Considerations in Business,2
+Market Analysis and Strategy,Business Plan Development;Legal and Ethical Considerations in Business,2
+Financial Planning and Funding,Business Plan Development;Market Analysis and Strategy;Legal and Ethical Considerations in Business,2
+Legal and Ethical Considerations in Business,Business Plan Development,2
+Project Management,Software Engineering,3
+Construction Project Management,Construction Equipment and Methods;Cost Estimation and Budgeting;Safety in Construction;Quality Assurance and Control,2
+Cost Estimation and Budgeting,Quantity Estimation Techniques;Rate Analysis;Valuation Methods;Tendering and Contract Procedures,2
+Cost Estimation and Control,Measurement of Building Works;Preparation of Bills of Quantities;Valuation of Properties;Contract Administration,2
+Valuation Methods,Quantity Estimation Techniques;Rate Analysis;Tendering and Contract Procedures,2
+Valuation of Properties,Measurement of Building Works;Preparation of Bills of Quantities;Contract Administration,2
+Contract Administration,Measurement of Building Works;Preparation of Bills of Quantities,2
+Introduction to Drawing Instruments and Standards,Orthographic Projections;Isometric Projections;Sectional Views;Development of Surfaces,2
+Orthographic Projections,Isometric Projections;Sectional Views;Development of Surfaces,3
+Isometric Projections,Sectional Views;Development of Surfaces,3
+Sectional Views,Development of Surfaces,2
+Sectional and Auxiliary Views,Engineering Drawing Basics;CAD Tools Overview;Orthographic and Isometric Views;3D Modeling Fundamentals,2
+3D Modeling Fundamentals,Engineering Drawing Basics;CAD Tools Overview;Orthographic and Isometric Views,3
+Introduction to Surveying and Measurement Techniques,Chain and Compass Surveying;Leveling and Contouring;Theodolite Surveying;Tacheometry and Electronic Distance Measurement,2
+Theodolite Surveying,Chain and Compass Surveying;Leveling and Contouring;Tacheometry and Electronic Distance Measurement,3
+Tacheometry and Electronic Distance Measurement,Chain and Compass Surveying;Leveling and Contouring,2
+Building Components and Systems,Properties of Building Materials;Construction Techniques;Construction Planning and Management;Sustainable Building Practices,2
+Construction Planning and Management,Properties of Building Materials;Construction Techniques;Sustainable Building Practices,2
+Special Types of Concrete,Properties of Cement and Aggregates;Concrete Mix Design;Workability and Durability of Concrete;Quality Control and Testing,2
+Quality Control and Testing,Properties of Cement and Aggregates;Concrete Mix Design;Workability and Durability of Concrete,2
+Construction Equipment and Methods,Cost Estimation and Budgeting;Safety in Construction;Quality Assurance and Control,2
+Soil Properties and Classification,Soil Compaction and Consolidation;Shear Strength of Soils;Earth Pressure Theories;Foundation Engineering,2
+Shear Strength of Soils,Soil Compaction and Consolidation;Earth Pressure Theories;Foundation Engineering,2
+Foundation Engineering,Soil Compaction and Consolidation;Earth Pressure Theories,2
+Groundwater Hydrology,Hydrological Cycle and Precipitation;Runoff and Streamflow Analysis;Flood and Drought Management;Water Resource Planning and Management,2
+Structural Analysis Methods,Design of Steel Structures;Design of Reinforced Concrete Structures;Structural Dynamics;Earthquake Engineering,2
+Design of Steel Structures,Design of Reinforced Concrete Structures;Structural Dynamics;Earthquake Engineering,2
+Structural Dynamics,Design of Reinforced Concrete Structures;Earthquake Engineering,2
+Earthquake Engineering,Design of Reinforced Concrete Structures,2
+Highway Planning and Design,Traffic Engineering and Management;Pavement Materials and Design;Railway Engineering;Airport and Harbor Engineering,2
+Traffic Engineering and Management,Pavement Materials and Design;Railway Engineering;Airport and Harbor Engineering,2
+Railway Engineering,Pavement Materials and Design;Airport and Harbor Engineering,2
+Airport and Harbor Engineering,Pavement Materials and Design,2
+Design of Tension and Compression Members,Properties of Structural Steel;Design of Beams and Connections;Plate Girders and Trusses;Plastic Analysis and Design,2
+Design of Beams and Connections,Properties of Structural Steel;Plate Girders and Trusses;Plastic Analysis and Design,2
+Plate Girders and Trusses,Properties of Structural Steel;Plastic Analysis and Design,2
+Design Principles of Reinforced Concrete,Design of Beams and Slabs;Design of Columns and Footings;Prestressed Concrete Structures;Shear and Torsion in Concrete Members,2
+Prestressed Concrete Structures,Design of Beams and Slabs;Design of Columns and Footings;Shear and Torsion in Concrete Members,2
+Shear and Torsion in Concrete Members,Design of Beams and Slabs;Design of Columns and Footings,2
+Water Supply Engineering,Wastewater Treatment;Solid Waste Management;Air and Noise Pollution Control;Environmental Impact Assessment,2
+Wastewater Treatment,Solid Waste Management;Air and Noise Pollution Control;Environmental Impact Assessment,2
+3D Modeling and Visualization,Introduction to CAD Software;2D Drafting Techniques;Parametric Modeling;Simulation and Analysis Tools,2
+Parametric Modeling,Introduction to CAD Software;2D Drafting Techniques;Simulation and Analysis Tools,2
+Simulation and Analysis Tools,Introduction to CAD Software;2D Drafting Techniques,2
+Descriptive Statistics,Probability Theories and Distributions;Statistical Inference;Regression and Correlation Analysis;Hypothesis Testing,2
+Probability Theories and Distributions,Statistical Inference;Regression and Correlation Analysis;Hypothesis Testing,2
+Statistical Inference,Regression and Correlation Analysis;Hypothesis Testing,2
+Disaster Risk Assessment,Types of Disasters and Their Impact;Emergency Planning and Response;Disaster Mitigation Strategies;Post-Disaster Recovery and Rehabilitation,2
+Post-Disaster Recovery and Rehabilitation,Types of Disasters and Their Impact;Emergency Planning and Response;Disaster Mitigation Strategies,2
+Mechanics Experiments,Measurement and Uncertainty;Optics and Waves;Electricity and Magnetism;Modern Physics Experiments,2
+Optics and Waves,Measurement and Uncertainty;Electricity and Magnetism;Modern Physics Experiments,3
+Electricity and Magnetism,Measurement and Uncertainty;Modern Physics Experiments,3
+Torsion and Buckling,Stress-Strain Relations;Bending and Shear Stress;Principal Stresses;Failure Theories,3
+Phase Diagrams,Crystal Structure of Metals;Heat Treatment;Mechanical Properties of Metals;Corrosion and Alloying,2
