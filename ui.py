@@ -1,243 +1,280 @@
 import streamlit as st
 import subprocess
 import os
-import graphviz
-from datetime import datetime, timedelta
+from pathlib import Path
 
-ADMIN_ID = "admin"
-ADMIN_PASS = "admin123"
+# session states
+if "page" not in st.session_state:
+    st.session_state.page = "home"
+if "logged_in" not in st.session_state:
+    st.session_state.logged_in = False
+if "username" not in st.session_state:
+    st.session_state.username = ""
 
-def user_exists(userid):
-    if not os.path.exists("users.txt"):
-        return False
-    with open("users.txt", "r", encoding="utf-8") as f:
-        for line in f:
-            parts = line.strip().split(",")
-            if len(parts) >= 2 and parts[1] == userid:
-                return True
-    return False
+st.set_page_config(page_title="Smart Study Planner", layout="centered")
 
-def get_userid_login(userid, password):
-    if userid == ADMIN_ID and password == ADMIN_PASS:
-        return "Admin"
-    if not os.path.exists("users.txt"):
-        return None
-    with open("users.txt", "r", encoding="utf-8") as f:
-        for line in f:
-            parts = line.strip().split(",")
-            if len(parts) >= 3 and parts[1] == userid and parts[2] == password:
-                return parts[0]  # return name
-    return None
+# Home Page function
+def home_page():
+    st.markdown("<h1 style='text-align: center;'>Welcome To Study Planner</h1>", unsafe_allow_html=True)
+    st.markdown("<h3 style='text-align: center;'>Choose an option to continue:</h3>", unsafe_allow_html=True)
+    col1, col2, col3, col4, col5, col6 = st.columns(6)
+    with col2:
+        if st.button("🔐Login"):
+            st.session_state.page = "login"
+            st.rerun()
+    with col5:
+        if st.button("📝Register"):
+            st.session_state.page = "register"
+            st.rerun()
 
-def register_user(name, userid, password):
-    with open("users.txt", "a", encoding="utf-8") as f:
-        f.write(f"{name},{userid},{password}\n")
-
-def get_user_plan_file(userid):
-    return f"plans_{userid}.txt"
-
-def load_topics(filename="topics1.txt"):
-    topics = []
-    try:
-        with open(filename, "r", encoding="utf-8") as f:
-            for line in f:
-                parts = line.strip().split(",")
-                if parts and parts[0]:
-                    topics.append(parts[0])
-    except Exception as e:
-        pass
-    return topics
-
-def parse_study_plan(filename="output.txt"):
-    order = []
-    times = []
-    with open(filename, "r", encoding="utf-8") as f:
-        for line in f:
-            line = line.strip()
-            if line.startswith("- "):
-                parts = line[2:].split("(Estimated time:")
-                topic = parts[0].strip()
-                time = int(parts[1].replace("hours)", "").strip()) if len(parts) > 1 else 1
-                order.append(topic)
-                times.append(time)
-    return order, times
-
-def generate_flowchart(order):
-    dot = graphviz.Digraph(comment='Study Plan Flow')
-    for idx, topic in enumerate(order):
-        dot.node(str(idx), topic)
-        if idx > 0:
-            dot.edge(str(idx-1), str(idx))
-    return dot
-
-def generate_timetable(order, times, start_time_str="09:00"):
-    timetable = []
-    current_time = datetime.strptime(start_time_str, "%H:%M")
-    for topic, hours in zip(order, times):
-        end_time = current_time + timedelta(hours=hours)
-        timetable.append(f"{current_time.strftime('%H:%M')} - {end_time.strftime('%H:%M')}: {topic} ({hours} hours)")
-        current_time = end_time
-    return "\n".join(timetable)
-
-st.title("📚 Smart Study Planner")
-menu = st.sidebar.selectbox("Choose", ["Login", "Register"])
-
-if menu == "Register":
-    st.header("📝 Register New User")
-    name = st.text_input("Full Name")
-    userid = st.text_input("Choose a Unique User ID")
-    password = st.text_input("Password", type="password")
-    if st.button("Register"):
-        if not name.strip() or not userid.strip() or not password.strip():
-            st.warning("Please fill all fields.")
-        elif user_exists(userid):
-            st.error("This User ID is already taken. Please choose another.")
-        else:
-            register_user(name.strip(), userid.strip(), password.strip())
-            st.success("Registration successful! You can now login.")
-
-elif menu == "Login":
-    st.header("🔐 Login")
-    userid = st.text_input("User ID")
-    password = st.text_input("Password", type="password")
+# Login Page function
+def login_page():
+    st.title("🔐 Login")
+    username = st.text_input("Username", key="login_user")
+    password = st.text_input("Password", type="password", key="login_pass")
     if st.button("Login"):
-        name = get_userid_login(userid.strip(), password.strip())
-        if name:
-            st.success(f"Welcome, {name} (User ID: {userid})!")
-            st.session_state['userid'] = userid
-            st.session_state['name'] = name
-        else:
-            st.error("Invalid User ID or Password.")
-
-# --- Study Planner UI (only after login) ---
-userid = st.session_state.get('userid')
-name = st.session_state.get('name')
-
-if userid and name:
-    # --- Admin: Only Add Topic ---
-    if userid == ADMIN_ID:
-        st.markdown("---")
-        st.header("➕ Add a New Topic (Admin Only)")
-        all_topics = load_topics()
-        new_topic = st.text_input("Topic Name")
-        new_prereq = st.text_input("Prerequisites (separate multiple by semicolon ; )")
-        new_time = st.text_input("Estimated Time (in hours, e.g. 4)")
-
-        # --- Prerequisite Suggestions ---
-        if new_prereq.strip():
-            last_part = new_prereq.split(";")[-1].strip()
-            if last_part:
-                suggestions = [t for t in all_topics if last_part.lower() in t.lower()]
-                if suggestions:
-                    st.markdown("**Prerequisite Suggestions:**")
-                    for s in suggestions[:10]:
-                        st.write(f"- {s}")
-
-        if st.button("Add Topic"):
-            if not new_topic.strip() or not new_time.strip():
-                st.warning("Please enter both topic name and estimated time.")
+        try:
+            with open("users.txt", "r") as file:
+                users = {line.split(",")[0].strip(): line.split(",")[1].strip() for line in file if "," in line}
+            if username in users and users[username] == password:
+                st.session_state.logged_in = True
+                st.session_state.username = username
+                st.session_state.page = "planner"
+                st.success("✅ Login successful!")
+                st.rerun()
             else:
-                topic = new_topic.strip()
-                prereq = new_prereq.strip()
-                time = new_time.strip()
-                if prereq.lower() == "none":
-                    prereq = ""
-                try:
-                    with open("topics1.txt", "a", encoding="utf-8") as f:
-                        f.write(f"{topic},{prereq},{time}\n")
-                    st.success(f"✅ Topic '{topic}' added successfully!")
-                except Exception as e:
-                    st.error(f"❌ Failed to add topic: {e}")
-    # --- Normal User: Study Planner ---
-    else:
-        st.markdown("---")
-        st.header("Generate Your Study Plan")
-        all_topics = load_topics()
-        user_input = st.text_input("Enter your subject and get your study plan:")
+                st.error("Invalid username or password.")
+        except FileNotFoundError:
+            st.error("User database not found. Please register first.")
 
-        # --- Show search suggestions ---
-        if user_input.strip():
-            suggestions = [t for t in all_topics if user_input.lower() in t.lower()]
-            if suggestions:
-                st.markdown("**Suggestions:**")
-                for s in suggestions[:10]:
-                    st.write(f"- {s}")
-
-        # --- Generate Plan Button ---
-        current_plan = ""
-        if st.button("Generate Plan"):
-            with open("input.txt", "w") as file:
-                file.write(user_input.strip())
+# Register Page
+def register_page():
+    st.title("📝 Register")
+    username = st.text_input("Choose a Username", key="register_user")
+    password = st.text_input("Choose a Password", type="password", key="register_pass")
+    if st.button("Register"):
+        if username and password:
             try:
-                subprocess.run(["study_planner.exe"], check=True)
-                st.success("✅ Study plan generated successfully.")
-                # Read output from file
-                with open("output.txt", "r") as file:
-                    output_contents = file.read().strip()
-                    if output_contents:
-                        st.subheader("📖 Your Study Plan:")
-                        st.text(output_contents)
-                        # Save plan to user file (history)
-                        plan_file = get_user_plan_file(userid)
-                        with open(plan_file, "a", encoding="utf-8") as f:
-                            f.write(f"---\n{user_input}\n{output_contents}\n")
-                        # Prepare current plan for download
-                        current_plan = f"User Name: {name}\nUser ID: {userid}\n\nSubject: {user_input}\n\n{output_contents}"
-                        st.download_button(
-                            "Download This Study Plan",
-                            current_plan,
-                            file_name=f"{userid}_{user_input.replace(' ','_')}_plan.txt"
-                        )
-                        # --- Flowchart & Timetable Features ---
-                        order, times = parse_study_plan("output.txt")
-                        if order and times:
-                            # Flowchart
-                            dot = generate_flowchart(order)
-                            dot.render('study_plan_flowchart', format='png')
-                            st.image('study_plan_flowchart.png', caption="Study Plan Flowchart")
-                            with open('study_plan_flowchart.png', 'rb') as img_file:
-                                st.download_button(
-                                    "Download Flowchart",
-                                    img_file.read(),
-                                    file_name="study_plan_flowchart.png"
-                                )
-                            # Timetable: User se start time lo
-                            start_time_str = st.text_input(
-                                "Enter your study start time (HH:MM, e.g. 09:00)", value="09:00"
-                            )
-                            timetable = generate_timetable(order, times, start_time_str)
-                            st.subheader("🕒 Real-Time Timetable")
-                            st.text(timetable)
-                            st.download_button("Download Timetable", timetable, file_name="timetable.txt")
-                        else:
-                            st.info("Flowchart/timetable banane ke liye output.txt me topics aur time sahi format me hone chahiye.")
-                    else:
-                        st.warning("⚠️ No relevant study plan found for the entered subject.")
+                existing_users = set()
+                try:
+                    with open("users.txt", "r") as file:
+                        existing_users = {line.strip().split(",")[0] for line in file if "," in line}
+                except FileNotFoundError:
+                    st.warning("No Database found")
+                if username in existing_users:
+                    st.error("Username already exists, please choose another")
+                else:
+                    with open("users.txt", "a") as file:
+                        file.write(f"{username},{password}\n")
+                    st.success("Registration successful")
+                    st.session_state.page = "login"
+                    st.rerun()
             except Exception as e:
-                st.error(f"❌ Failed to run the study planner or read output.\n{e}")
-
-        # --- Previous Study Plans List & Download ---
-        plan_file = get_user_plan_file(userid)
-        if os.path.exists(plan_file):
-            with open(plan_file, "r", encoding="utf-8") as f:
-                plans_raw = f.read()
-            # Split plans by "---"
-            plans = [p.strip() for p in plans_raw.split("---") if p.strip()]
-            st.subheader("📚 Your Previous Study Plans")
-            for idx, plan in enumerate(plans, 1):
-                # First line: subject, then plan
-                lines = plan.split('\n', 1)
-                subject = lines[0] if lines else f"Plan {idx}"
-                plan_content = lines[1] if len(lines) > 1 else ""
-                download_content = f"User Name: {name}\nUser ID: {userid}\n\nSubject: {subject}\n\n{plan_content}"
-                with st.expander(f"{idx}. {subject}"):
-                    st.text(plan_content)
-                    st.download_button(
-                        f"Download Plan {idx}",
-                        download_content,
-                        file_name=f"{userid}_{subject.replace(' ','_')}_plan.txt"
-                    )
+                st.error(f"Registration failed: {str(e)}")
         else:
-            st.info("No study plans found yet.")
-else:
-    st.info("Please login to use the study planner.")
+            st.error("Please fill in both fields")
+
+# Planner Page
+def planner_page():
+    st.title(" Smart Study Planner")
+    if st.session_state.logged_in:
+        st.success(f"Welcome, {st.session_state.username} Buddy, Let's Create Your Study Plan Together!")
+
+    try:
+        with open("topics1.txt", "r") as f:
+            all_lines = [line.strip() for line in f if line.strip()]
+            all_topics = [line.split(",")[0] for line in all_lines if "," in line]
+    except FileNotFoundError:
+        st.error("Topics file not found.")
+        return
+
+    if "user_input" not in st.session_state:
+        st.session_state.user_input = ""
+
+    st.session_state.user_input = st.text_input("Enter a Topic and get your study plan:", st.session_state.user_input)
+
+    if st.session_state.user_input.strip():
+        suggestions = [t for t in all_topics if st.session_state.user_input.lower() in t.lower()]
+        if suggestions:
+            st.markdown("**Suggestions:**")
+            for s in suggestions[:10]:
+                st.write(f"- {s}")
+        else:
+            st.warning("No suggestions found.")
+
+    col1, _, _, col5, col6, col7 = st.columns([2, 2, 1, 1, 1, 1])
+    with col1:
+        generate_clicked = st.button("Generate Plan")
+    with col7:
+        myplan_clicked = st.button("My Plan")
+
+    if generate_clicked and st.session_state.user_input.strip():
+        with open("input.txt", "w") as file:
+            file.write(st.session_state.user_input.strip())
+        try:
+            subprocess.run(["study_planner.exe"], check=True)
+            st.success("✅ Study plan generated.")
+
+            with open("output.txt", "r") as file:
+                lines = file.readlines()
+
+            lines_before_empty = []
+            lines_after_first = []
+            lines_after_second = []
+
+            count = 0
+            collecting = False
+            for i, line in enumerate(lines):
+                if line.strip() == "":
+                    count += 1
+                    if count == 1:
+                        if i + 1 < len(lines):
+                            lines_after_first.append(lines[i + 1].strip())
+                    elif count == 2:
+                        collecting = True
+                    continue
+                if count < 1:
+                    lines_before_empty.append(line.strip())
+                elif collecting:
+                    lines_after_second.append(line.strip())
+
+            st.markdown("<h3 style='text-align: center;'>📖 Your Study Plan:</h3>", unsafe_allow_html=True)
+            st.success("Note: Start from Bottom to Top")
+            st.code("\n".join(lines_before_empty))
+            if lines_after_first:
+                st.success(f"{lines_after_first[0]}")
+            st.markdown("<p style='color:blue; text-align: center; font-size: 22px;'>Suggested Topics to Study:</p>", unsafe_allow_html=True)
+            if lines_after_second:
+                st.code("\n".join(lines_after_second), language="text")
+#save the plan path just after generating the plan
+            downloads_path = str(Path.home() / "Downloads")
+            filename = f"{st.session_state.username}.txt"
+            file_path = os.path.join(downloads_path, filename)
+            with open(file_path, "w") as f:
+                f.write("\n".join(lines_before_empty) + "\n\n" + "\n".join(lines_after_second))
+            with open("user_files.txt", "a") as f:
+                f.write(f"{st.session_state.username},{file_path}\n")
+
+            st.download_button("Download Plan", "\n".join(lines_before_empty) + "\n\n" + "\n".join(lines_after_second), filename)
+        except Exception as e:
+            st.error(f"Failed to generate or display the plan: {e}")
+
+    if myplan_clicked:
+        st.session_state.page = "last_saved_plan"
+        st.rerun()
+
+    col1, _, _, col5, col6, col7 = st.columns([2, 2, 1, 1, 1, 1])
+    with col7:
+        if st.button("Logout"):
+            output_file = "output.txt"
+            if os.path.exists(output_file):
+                with open(output_file, "w") as f:
+                    f.write("") 
+            st.session_state.logged_in = False
+            st.session_state.username = ""
+            st.session_state.page = "home"
+            st.rerun()
+    with col1:
+        show_flowchart = st.button("Show Flowchart", key="show_flowchart_button")
+
+    def create_flowchart():
+        st.success("Flowchart is ready")
+        with st.expander("Flowchart Output", expanded=True):
+            try:
+                with open("output.txt", "r") as f:
+                    lines = f.readlines()
+                    for index, line in enumerate(lines):
+                        if line.strip():
+                            formatted_line = f"""
+                            <div style="border: 3px solid #00AFFF; padding: 25px; 
+                                        border-radius: 12px; background-color: #071330; 
+                                        text-align: center; margin-bottom: 18px;">
+                                <span style="font-size: 22px; font-weight: bold; color: #FFFFFF;">{line.strip()}</span>
+                            </div>
+                            """
+                            st.markdown(formatted_line, unsafe_allow_html=True)
+                            if index + 1 < len(lines) and lines[index + 1].strip():
+                                st.markdown("<h3 style='text-align: center; font-size: 40px; color: #00AFFF;'>⬇</h3>", unsafe_allow_html=True)
+                        else:
+                            break
+            except FileNotFoundError:
+                st.error("The file 'output.txt' was not found.")
+
+    if st.session_state.logged_in and show_flowchart:
+        create_flowchart()
+
+# Last Saved Plan
+def last_saved_plan():
+    username = st.session_state.get("username", None)
+    if not username:
+        st.error("User not logged in.")
+        return
+
+    found_plan = False
+    try:
+        with open("user_files.txt", "r") as user_file:
+            for line in user_file:
+                if line.startswith(username + ","):
+                    last_plan_path = line.strip().split(",")[1]
+
+                    if os.path.exists(last_plan_path):
+                        found_plan = True
+                        st.subheader("📄 Your Last Saved Plan:")
+
+                        with open(last_plan_path, "r") as plan_file:
+                            lines = plan_file.readlines()
+
+                        before_first_blank = []
+                        after_first_blank_line = []
+                        after_second_blank_lines = []
+
+                        blank_line_count = 0
+                        collecting_after_second_blank = False
+
+                        for i, line in enumerate(lines):
+                            stripped_line = line.strip()
+                            if stripped_line == "":
+                                blank_line_count += 1
+                                if blank_line_count == 1 and i + 1 < len(lines):
+                                    after_first_blank_line.append(lines[i + 1].strip())
+                                elif blank_line_count == 2:
+                                    collecting_after_second_blank = True
+                                continue
+
+                            if blank_line_count == 0:
+                                before_first_blank.append(stripped_line)
+                            elif collecting_after_second_blank:
+                                after_second_blank_lines.append(stripped_line)
+
+                        st.code("\n".join(before_first_blank))
+                        if after_first_blank_line:
+                            st.success(after_first_blank_line[0])
+                        if after_second_blank_lines:
+                            st.markdown("**Suggested Topics to Study:**")
+                            st.code("\n".join(after_second_blank_lines))
+
+                    break
+
+        if not found_plan:
+            st.warning("No saved plan found for your user.")
+
+    except FileNotFoundError:
+        st.warning("User plan record file 'user_files.txt' not found.")
+
+    #  Back to Planner button 
+    if st.button("⬅️ Go Back to Planner"):
+        st.session_state.page = "planner"
+        st.rerun()
+
+    
+# Main router logic
+if st.session_state.page == "home":
+    home_page()
+elif st.session_state.page == "login":
+    login_page()
+elif st.session_state.page == "register":
+    register_page()
+elif st.session_state.page == "planner":
+    planner_page()
+elif st.session_state.page == "last_saved_plan":
+    last_saved_plan()
